@@ -109,9 +109,7 @@ lock.onclick = () => {
   popupLock.classList.remove("hidden");
 };
 
-const difficulty = localStorage.getItem("difficulty");
-
-if (difficulty === "medium") {
+if (localStorage.getItem("difficulty") === "medium") {
   document.getElementsByClassName("firstClue")[0].textContent = "Clouds of down beneath your head,";
 
   document.getElementsByClassName("firstClue")[1].textContent = "Guard the dreams that come by night.";
@@ -123,7 +121,7 @@ if (difficulty === "medium") {
   document.getElementsByClassName("secondClue")[2].textContent = "Twice to uncover what awaits.";
 }
 
-else if (difficulty === "hard") {
+else if (localStorage.getItem("difficulty") === "hard") {
   document.getElementsByClassName("firstClue")[0].textContent = "A resting crown upon a sea of white,";
 
   document.getElementsByClassName("firstClue")[1].textContent = "Where silent wings surrender to the night.";

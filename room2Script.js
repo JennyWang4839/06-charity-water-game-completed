@@ -177,9 +177,7 @@ jerrycan.onclick = () => {
   showQuestion();
 };
 
-const difficulty = localStorage.getItem("difficulty");
-
-if (difficulty === "medium") {
+if (localStorage.getItem("difficulty") === "medium") {
   document.getElementsByClassName("firstClue")[0].textContent = "In the chamber where water gathers still,";
 
   document.getElementsByClassName("firstClue")[1].textContent = "Sun-colored metal hides the will.";
@@ -193,7 +191,7 @@ if (difficulty === "medium") {
   document.getElementsByClassName("secondClue")[3].textContent = "And the silent lock will yield.";
 }
 
-else if (difficulty === "hard") {
+else if (localStorage.getItem("difficulty") === "hard") {
   document.getElementsByClassName("firstClue")[0].textContent = "Where mirrors fog and quiet pools remain,";
 
   document.getElementsByClassName("firstClue")[1].textContent = "The color of sunlight guards the gain.";
