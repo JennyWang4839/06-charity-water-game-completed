@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Water Escape Room Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="intro">
+      <h1>Charity Water Escape Room Game</h1>
+    </div>
+
+    <div id="room2" class="room">
+        <h2>Bathroom</h2>
+
+        <p>Where baths are drawn and water waits,</p>
+
+        <p>A bright yellow can holds hidden fates.</p>
+
+        <img src="img/bathroom.png" alt="Bathroom" class="room">
+
+        <div class="objects">
+          <button id="jerrycan"></button>
+
+          <button id="windowlock"></button>
+          
+          <button id="back" onclick="previousRoom()"></button>
+        </div>
+    </div>
+
+    <button onclick="openInventory()" class="trans" id="inventoryBtn">Inventory</button>
+
+    <div id="inventory">
+        <h2>Inventory</h2>
+        <ul id="inventoryList"></ul>
+    </div>
+
+    <div id="popup-trivia" class="hidden popup">
+      <p id="question"></p>
+
+      <div id="answers">
+        <button class="answerBtn" onclick="checkAnswer(this)"></button>
+        <button class="answerBtn" onclick="checkAnswer(this)"></button>
+        <button class="answerBtn" onclick="checkAnswer(this)"></button>
+      </div>
+
+      <p id="triviaResult"></p>
+    </div>
+
+    <div id="popup-clue" class="hidden popup">
+      <h3>You found a clue!</h3>
+
+      <p>Knowledge reveals more than truth—</p>
+
+      <p>Each answer holds a number of use.</p>
+
+      <p>Gather them well, in the order you see,</p>
+
+      <p>And the code will appear as the key.</p>
+
+      <button id="clue" class="trans" onclick="document.getElementById('popup-clue').classList.add('hidden')">Close</button>
+    </div>
+
+    <div id="popup-lock" class="hidden popup">
+      <h3>Enter 4-Digit Code</h3>
+
+      <input type="text" id="codeInput" placeholder="Enter code">
+
+      <button id="submitCode" class="trans"onclick="checkCode(2)">Unlock</button>
+
+      <button id="closeLock" class="trans" onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="popup-congrats" class="hidden popup">
+      <h3>Congratulations!</h3>
+
+      <p>You have escaped!</p>
+
+      <button id="reset" class="trans" onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <script src="room2Script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
