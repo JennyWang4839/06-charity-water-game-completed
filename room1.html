@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Water Escape Room Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="intro">
+      <h1>Charity Water Escape Room Game</h1>
+    </div>
+
+    <div id="timer">Time Left: 05:00</div>
+
+    <div id="room1" class="room">
+        <h2>Bedroom</h2>
+
+        <p class="firstClue">Fluff and feathers, calm and white,</p>
+
+        <p class="firstClue">Lift what cushions sleep at night.</p>
+
+        <img src="img/bedroom.png" alt="Bedroom" class="room">
+
+        <div class="objects">
+          <button id="pillow"></button>
+
+          <button id="painting"></button>
+
+          <button id="lock"></button>
+        </div>
+    </div>
+
+    <button onclick="openInventory()" class="trans" id="inventoryBtn">Inventory</button>
+
+    <div id="inventory">
+        <h2>Inventory</h2>
+        <ul id="inventoryList"></ul>
+    </div>
+
+    <div id="popup-clue" class="popup hidden">
+      <h3>You found a clue!</h3>
+
+      <p class="secondClue">A picture hides more than paint and frame.</p>
+
+      <p class="secondClue">One touch wakes it,</p>
+
+      <p class="secondClue">Two reveal the game.</p>
+
+      <button id="clue" class="trans" onclick="document.getElementById('popup-clue').classList.add('hidden')">Close</button>
+    </div>
+
+    <div id="popup-code" class="popup hidden">
+      <h3>You found the code!</h3>
+
+      <p>Code: World Water Day</p>
+
+      <button id="collectCode" class="trans" class="addToInventory" onclick="addToInventory('Code: World Water Day')">Take</button>
+    </div>
+
+    <div id="popup-lock" class="hidden popup">
+      <h3>Enter 4-Digit Code</h3>
+
+      <input type="text" id="codeInput" placeholder="Enter code">
+
+      <button id="submitCode" class="trans"onclick="checkCode(1)">Unlock</button>
+
+      <button id="closeLock" class="trans" onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="popup-nextroom" class="hidden popup">
+      <h3>The lock opens!</h3>
+
+      <p>You step through the doorway into the next room.</p>
+
+      <button id="nextRoomBtn" class="trans" onclick="nextRoom()">Next Room</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="timer.js"></script>
+</body>
+</html>

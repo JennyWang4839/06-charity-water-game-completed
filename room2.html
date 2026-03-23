@@ -12,12 +12,14 @@
       <h1>Charity Water Escape Room Game</h1>
     </div>
 
+    <div id="timer">Time Left: 05:00</div>
+
     <div id="room2" class="room">
         <h2>Bathroom</h2>
 
-        <p>Where baths are drawn and water waits,</p>
+        <p class="firstClue">Where baths are drawn and water waits,</p>
 
-        <p>A bright yellow can holds hidden fates.</p>
+        <p class="firstClue">A bright yellow can holds hidden fates.</p>
 
         <img src="img/bathroom.png" alt="Bathroom" class="room">
 
@@ -52,11 +54,11 @@
     <div id="popup-clue" class="hidden popup">
       <h3>You found a clue!</h3>
 
-      <p>Knowledge reveals more than truth—</p>
+      <p class="secondClue">Knowledge reveals more than truth—</p>
 
-      <p>Each answer holds a number of use.</p>
+      <p class="secondClue">Each answer holds a number of use.</p>
 
-      <p>Gather them well, in the order you see,</p>
+      <p class="secondClue">Gather them well, in the order you see,</p>
 
       <p>And the code will appear as the key.</p>
 
@@ -84,5 +86,9 @@
     <script src="room2Script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="timer.js"></script>
 </body>
 </html>

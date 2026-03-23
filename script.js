@@ -3,8 +3,6 @@ console.log('JavaScript file is linked correctly.');
 
 let inventory = []
 
-let keyFound = false
-
 const sidebar = document.getElementById("inventorySidebar");
 
 function openInventory(){
@@ -110,3 +108,29 @@ painting.onclick = () => {
 lock.onclick = () => {
   popupLock.classList.remove("hidden");
 };
+
+const difficulty = localStorage.getItem("difficulty");
+
+if (difficulty === "medium") {
+  document.getElementsByClassName("firstClue")[0].textContent = "Clouds of down beneath your head,";
+
+  document.getElementsByClassName("firstClue")[1].textContent = "Guard the dreams that come by night.";
+
+  document.getElementsByClassName("secondClue")[0].textContent = "Where drifting thoughts are gently led.";
+
+  document.getElementsByClassName("secondClue")[1].textContent = "Disturb it once to rouse its state,";
+
+  document.getElementsByClassName("secondClue")[2].textContent = "Twice to uncover what awaits.";
+}
+
+else if (difficulty === "hard") {
+  document.getElementsByClassName("firstClue")[0].textContent = "A resting crown upon a sea of white,";
+
+  document.getElementsByClassName("firstClue")[1].textContent = "Where silent wings surrender to the night.";
+
+  document.getElementsByClassName("secondClue")[0].textContent = "A quiet canvas keeps its secret.";
+
+  document.getElementsByClassName("secondClue")[1].textContent = "The first knock wakes it,";
+
+  document.getElementsByClassName("secondClue")[2].textContent = "The second lets you in.";
+}

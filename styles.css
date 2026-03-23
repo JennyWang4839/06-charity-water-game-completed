@@ -268,3 +268,36 @@ button {
   border-color: transparent;
   background-color: transparent;
 }
+
+#timer {
+  position: fixed;
+
+  top: 40px;
+
+  left: 20px;
+
+  color: #ffd700;
+
+  padding: 10px;
+}
+
+#startScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #ffd700;
+  font-family: 'Press Start 2P', monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  z-index: 9999;
+
+  transition: opacity 3s ease;
+}

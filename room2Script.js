@@ -177,4 +177,34 @@ jerrycan.onclick = () => {
   showQuestion();
 };
 
+const difficulty = localStorage.getItem("difficulty");
+
+if (difficulty === "medium") {
+  document.getElementsByClassName("firstClue")[0].textContent = "In the chamber where water gathers still,";
+
+  document.getElementsByClassName("firstClue")[1].textContent = "Sun-colored metal hides the will.";
+
+  document.getElementsByClassName("secondClue")[0].textContent = "Answers leave traces beyond their name.";
+
+  document.getElementsByClassName("secondClue")[1].textContent = "Each one whispers a piece of the same.";
+
+  document.getElementsByClassName("secondClue")[2].textContent = "Follow the trail as it first appeared,";
+
+  document.getElementsByClassName("secondClue")[3].textContent = "And the silent lock will yield.";
+}
+
+else if (difficulty === "hard") {
+  document.getElementsByClassName("firstClue")[0].textContent = "Where mirrors fog and quiet pools remain,";
+
+  document.getElementsByClassName("firstClue")[1].textContent = "The color of sunlight guards the gain.";
+
+  document.getElementsByClassName("secondClue")[0].textContent = "Truth is not the only prize.";
+
+  document.getElementsByClassName("secondClue")[1].textContent = "Each discovery leaves a mark.";
+
+  document.getElementsByClassName("secondClue")[2].textContent = "Trace them back the way they came,";
+
+  document.getElementsByClassName("secondClue")[3].textContent = "And the dark will show the spark.";
+}
+
 addToInventory("Code: World Water Day");

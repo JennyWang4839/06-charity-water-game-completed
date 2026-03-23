@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Water Escape Room Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="startScreen">
+    <div id="intro">
+      <h1>Charity Water Escape Room Game</h1>
+    </div>
+
+    <h1>Select Difficulty</h1>
+
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <script>
+    function startGame(level) {
+        localStorage.setItem("difficulty", level);
+
+        if (level === "hard") {
+            localStorage.setItem("startTime", Date.now());
+        }
+
+        window.location.href = "room1.html";
+    }
+
+    window.onload = function() {
+      setTimeout(() => {
+          document.getElementById("intro").classList.add("fade");
+      }, 1500);
+    };
+
+    localStorage.removeItem("startTime");
+  </script>
+</body>
+</html>
