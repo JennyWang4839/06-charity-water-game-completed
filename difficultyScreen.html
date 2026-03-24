@@ -8,36 +8,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="startScreen">
-    <div id="intro">
-      <h1>Charity Water Escape Room Game</h1>
+  <main>
+    <div id="startScreen">
+      <div id="intro">
+        <h1>Charity Water Escape Room Game</h1>
+      </div>
+
+      <h1>Select Difficulty</h1>
+
+      <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('medium')">Medium</button>
+      <button onclick="startGame('hard')">Hard</button>
     </div>
 
-    <h1>Select Difficulty</h1>
+    <script>
+      function startGame(level) {
+          localStorage.setItem("difficulty", level);
 
-    <button onclick="startGame('easy')">Easy</button>
-    <button onclick="startGame('medium')">Medium</button>
-    <button onclick="startGame('hard')">Hard</button>
-  </div>
+          if (level === "hard") {
+              localStorage.setItem("startTime", Date.now());
+          }
 
-  <script>
-    function startGame(level) {
-        localStorage.setItem("difficulty", level);
+          window.location.href = "room1.html";
+      }
 
-        if (level === "hard") {
-            localStorage.setItem("startTime", Date.now());
-        }
+      window.onload = function() {
+        setTimeout(() => {
+            document.getElementById("intro").classList.add("fade");
+        }, 1500);
+      };
 
-        window.location.href = "room1.html";
-    }
+      localStorage.removeItem("startTime");
+    </script>
+  </main>
+  
+  <footer>
+    <p>Learn more about the mission:</p>
 
-    window.onload = function() {
-      setTimeout(() => {
-          document.getElementById("intro").classList.add("fade");
-      }, 1500);
-    };
+    <a href="https://www.charitywater.org" target="_blank">
+      Visit charity: water
+    </a>
 
-    localStorage.removeItem("startTime");
-  </script>
+    <span> | </span>
+
+    <a href="https://www.charitywater.org/donate" target="_blank">
+      Donate to help bring clean water
+    </a>
+  </footer>
 </body>
 </html>
