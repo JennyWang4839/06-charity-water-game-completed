@@ -14,11 +14,15 @@ function updateTimer(totalTime) {
   document.getElementById("timer").textContent = `Time Left: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
   if (remainingTime <= 0) {
+    document.getElementById("timer").textContent = "Time Left: 00:00";
+
     localStorage.removeItem("startTime");
 
     clearInterval(timerInterval);
 
     document.getElementById("popup-timeup").classList.remove("hidden");
+
+    return;
   }
 }
 
@@ -44,7 +48,7 @@ if (difficulty === "hard" || difficulty === "medium") {
     localStorage.setItem("startTime", Date.now());
   }
 
-  let timerInterval = setInterval(() => {
+  timerInterval = setInterval(() => {
     updateTimer(totalTime);
   }, 1000);
 }
