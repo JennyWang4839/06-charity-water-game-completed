@@ -74,7 +74,7 @@ body{
   height: auto;
 }
 
-.room h2, .room .firstClue {
+.room .firstClue {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -82,8 +82,13 @@ body{
   z-index: 2;
 }
 
-.room h2 {
+#name {
   top: 5%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 2;
 }
 
 .room .firstClue:nth-of-type(1) {
@@ -147,31 +152,45 @@ body{
 
   box-shadow: 6px 6px 0px #2b1a0c;
 
+  box-sizing: border-box;
+
+  overflow: hidden;
+
   display: none;
+
+  text-align: center;
+
+  list-style: none;
+}
+
+#inventory h2 {
+  margin: 0;
+
+  padding: 0;
 }
 
 #inventoryList {
   margin: 0;
 
   padding: 0;
-
-  list-style: none;
 }
 
 #inventoryList li {
   margin: 12px 0;
+
   padding: 8px;
 
   background: #8b5a2b;
+
   border: 3px solid #d4af37;
 
   box-shadow: 3px 3px 0px #2b1a0c;
 
-  list-style: none;
-
   font-family: 'Montserrat', Arial, sans-serif;
 
   font-size: 20px;
+
+  list-style: none;
 }
 
 #pillow {
@@ -249,6 +268,8 @@ button {
   cursor: pointer;
 
   font-family: 'Montserrat', Arial, sans-serif;
+
+  font-size: 20px;
 }
 
 .trans {
