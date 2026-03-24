@@ -16,21 +16,21 @@
     <div id="timer">Time Left: 05:00</div>
 
     <div id="room2" class="room">
-        <h2>Bathroom</h2>
+      <h2>Bathroom</h2>
 
-        <p class="firstClue">Where baths are drawn and water waits,</p>
+      <p class="firstClue">Where baths are drawn and water waits,</p>
 
-        <p class="firstClue">A bright yellow can holds hidden fates.</p>
+      <p class="firstClue">A bright yellow can holds hidden fates.</p>
 
-        <img src="img/bathroom.png" alt="Bathroom" class="room">
+      <div id="timer">Time Left: 05:00</div>
 
-        <div class="objects">
-          <button id="jerrycan"></button>
+      <img src="img/bathroom.png" alt="Bathroom" class="room">
 
-          <button id="windowlock"></button>
-          
-          <button id="back" onclick="previousRoom()"></button>
-        </div>
+      <button id="jerrycan" class="object"></button>
+
+      <button id="windowlock" class="object"></button>
+      
+      <button id="back" onclick="previousRoom()" class="object"></button>
     </div>
 
     <button onclick="openInventory()" class="trans" id="inventoryBtn">Inventory</button>
