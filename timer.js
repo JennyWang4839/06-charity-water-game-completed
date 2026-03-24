@@ -18,7 +18,7 @@ function updateTimer(totalTime) {
 
     clearInterval(timerInterval);
 
-    alert("Time's up! Game over.");
+    document.getElementById("popup-timeup").classList.remove("hidden");
   }
 }
 

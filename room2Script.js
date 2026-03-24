@@ -86,11 +86,11 @@ function resetGame() {
     p.classList.add("hidden")
   );
 
-  window.location.href = "index.html";
+  window.location.href = "difficultyScreen.html";
 
   setTimeout(() => {
-        document.getElementById("intro").classList.add("fade");
-    }, 1500);
+    document.getElementById("intro").classList.add("fade");
+  }, 1500);
 }
 
 window.onload = function() {

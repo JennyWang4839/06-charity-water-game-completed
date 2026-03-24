@@ -79,7 +79,15 @@
 
       <p>You have escaped!</p>
 
-      <button id="reset" class="trans" onclick="resetGame()">Reset Game</button>
+      <button id="winReset" class="trans" onclick="resetGame()">Restart Game</button>
+    </div>
+
+    <div id="popup-timeup" class="hidden popup">
+      <h3>Time's Up!</h3>
+
+      <p>You couldn't escape in time. Better luck next time!</p>
+
+      <button id="timeReset" class="trans" onclick="resetGame()">Restart Game</button>
     </div>
 
     <script src="room2Script.js"></script>

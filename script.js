@@ -67,6 +67,24 @@ function closePopup() {
   document.getElementById('codeInput').value = "";
 }
 
+function resetGame() {
+  inventory = [];
+
+  clickCount = 0;
+
+  currentQuestion = 0;
+
+  document.querySelectorAll(".popup").forEach(p =>
+    p.classList.add("hidden")
+  );
+
+  window.location.href = "difficultyScreen.html";
+
+  setTimeout(() => {
+    document.getElementById("intro").classList.add("fade");
+  }, 1500);
+}
+
 window.onload = function() {
     setTimeout(() => {
         document.getElementById("intro").classList.add("fade");
