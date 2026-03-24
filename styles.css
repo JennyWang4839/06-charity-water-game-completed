@@ -104,13 +104,18 @@ body{
 
 #inventoryBtn {
   position: absolute;
+
   top: 20px;
+
   right: 20px;
 
   background: #8b5a2b;
+
   border: 4px solid #d4af37;
 
   color: #ffd700;
+
+  font-size: 20px;
 
   padding: 10px;
 
@@ -122,13 +127,18 @@ body{
 #inventory {
   font-family: 'Montserrat', Arial, sans-serif;
 
+  font-size: 20px;
+
   position: fixed;
+
   right: 20px;
+
   top: 80px;
 
   width: 260px;
 
   background-color: #4b2e14;
+  
   color: #ffd700;
 
   border: 4px solid #d4af37;
@@ -161,7 +171,7 @@ body{
 
   font-family: 'Montserrat', Arial, sans-serif;
 
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #pillow {
@@ -190,7 +200,7 @@ body{
 }
 
 .popup {
-  font-size: 12px;
+  font-size: 15px;
 
   background-color: #4b2e14; /* dark brown */
   color: #ffd700; /* gold text */
@@ -270,6 +280,8 @@ button {
 #timer {
   position: absolute;
 
+  font-size: 20px;
+
   top: 40px;
 
   left: 20px;
@@ -309,7 +321,7 @@ button {
   background: black;
   color: #ffd700;
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
