@@ -337,7 +337,7 @@ button {
 
 #charityFooter {
   margin-top: 40px;
-  padding: 15px;
+  padding: 12px;
   text-align: center;
   background: black;
   color: #ffd700;
@@ -347,6 +347,7 @@ button {
   bottom: 0;
   width: 100%;
   opacity: 0.8;
+  z-index: 99999;
 }
 
 #charityFooter a {
