@@ -301,3 +301,26 @@ button {
 
   transition: opacity 3s ease;
 }
+
+#charityFooter {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  background: black;
+  color: #ffd700;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#charityFooter a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+#charityFooter a:hover {
+  text-decoration: underline;
+}
