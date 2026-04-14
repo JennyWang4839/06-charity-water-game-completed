@@ -1,5 +1,3 @@
 # Charity: water Game Prototype
 
-In this project, you’ll begin transforming your game concept from last week into a working interactive prototype using HTML, CSS, and JavaScript.
-
-This first version should focus on core functionality — clickable elements, score tracking, and a basic layout. The goal is to bring your idea to life with simple, working mechanics that you’ll refine and expand in the next milestone.
+In this project, I made a game associated with Water Charity. I used JavaScript, CSS, and HTML with the assistance of AI to create the game. I learned how to use CSS and JavaScript to create popups, fading screens, timer, etc. Challenges that I've solved include fitting the room background picture on the screen, making the timer work, etc. 
