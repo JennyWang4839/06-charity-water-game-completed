@@ -15,7 +15,7 @@ Secondary Colors:
 */
 
 body{
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Press Start 2P', monospace;
     color: white;
     text-align: center;
     margin: 0;
@@ -31,7 +31,7 @@ body{
   height: 100%;
   background: black;
   color: #ffd700;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,7 @@ body{
 }
 
 #inventory {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
 
   font-size: 20px;
 
@@ -186,7 +186,7 @@ body{
 
   box-shadow: 3px 3px 0px #2b1a0c;
 
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
 
   font-size: 20px;
 
@@ -251,7 +251,7 @@ input[type="text"] {
 
   box-shadow: 3px 3px 0px #2b1a0c;
 
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
 }
 
 button {
@@ -267,7 +267,7 @@ button {
 
   cursor: pointer;
 
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
 
   font-size: 20px;
 }
@@ -322,7 +322,7 @@ button {
   height: 100%;
   background: black;
   color: #ffd700;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
 
   display: flex;
   flex-direction: column;
@@ -341,7 +341,7 @@ button {
   text-align: center;
   background: black;
   color: #ffd700;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
   font-size: 20px;
   position: fixed;
   bottom: 0;
