@@ -364,3 +364,72 @@ button {
 #charityFooter a:hover {
   text-decoration: underline;
 }
+
+/* Mobile responsiveness for phone screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  #intro {
+    font-size: 20px;
+  }
+
+  #difficultyTitle {
+    font-size: 20px;
+  }
+
+  #inventoryBtn {
+    font-size: 16px;
+    padding: 8px;
+    top: 10px;
+    right: 10px;
+  }
+
+  #inventory {
+    font-size: 12px;
+    width: 200px;
+    right: 10px;
+    top: 60px;
+    padding: 15px;
+  }
+
+  #inventoryList li {
+    font-size: 10px;
+    margin: 8px 0;
+    padding: 6px;
+  }
+
+  .popup {
+    font-size: 12px;
+    width: 250px;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin: 8px;
+  }
+
+  #timer {
+    font-size: 16px;
+    top: 20px;
+    left: 10px;
+    padding: 8px;
+  }
+
+  #startScreen {
+    font-size: 20px;
+  }
+
+  #charityFooter {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
